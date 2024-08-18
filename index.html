@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Notification App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>University Notification App</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="all">All</a></li>
+                <li><a href="#" data-filter="academic">Academic</a></li>
+                <li><a href="#" data-filter="cultural">Cultural</a></li>
+                <li><a href="#" data-filter="misc">Misc.</a></li>
+                <li><a href="#" id="adminLink">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notification-feed">
+            <h2>Notifications</h2>
+            <!-- Notifications will be displayed here -->
+        </section>
+
+        <section class="admin-panel" id="adminPanel">
+            <h2>Admin Panel</h2>
+            <form id="postNotification">
+                <input type="password" id="adminPassword" placeholder="Enter Admin Password" required>
+                <input type="text" id="title" placeholder="Title" required disabled>
+                <textarea id="message" placeholder="Message" required disabled></textarea>
+                <select id="category" required disabled>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="academic">Academic</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="misc">Misc.</option>
+                </select>
+                <button type="submit" disabled>Post Notification</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 University Notification App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
